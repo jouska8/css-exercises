@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/*MY ATTEMPT, almost correct 
 body {
   height: 100vh;
   margin: 0;
@@ -35,6 +35,7 @@ input {
 .header {
   display: flex;
   margin-bottom: auto;
+  padding:8px;
 }
 
 .footer {
@@ -42,22 +43,21 @@ input {
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  background-color:#ddd;
+  background-color: #eeeeee;
+  padding-left:8px;
 }
 
 .left-links {
   margin-right:auto;
-  padding-left:8px;
 }
 
 .right-links {
   margin-left:auto;
-  padding-right:8px;
 }
 
 a {
   text-decoration:none;
-  color:gray;
+  color:grey;
 }
 
 .content {
@@ -70,9 +70,81 @@ a {
 
 li {
   display: inline;
-  padding:8px;
 }
 
 button {
   padding:8px;
+}
+
+*/
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+/* SOLUTION */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
+  margin-top: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
